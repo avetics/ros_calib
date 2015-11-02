@@ -1,0 +1,2 @@
+autopilot_bridge:joystickstatus:rqt_mypkg:rqt_telemetry
+-DCATKIN_DEVEL_PREFIX=/home/jinahadam/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/jinahadam/catkin_ws/install -G Unix Makefiles

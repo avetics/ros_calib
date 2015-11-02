@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "JoystickStatus")
+set(JoystickStatus_MAINTAINER "jinahadam <jinahadam@todo.todo>")
+set(JoystickStatus_DEPRECATED "")
+set(JoystickStatus_VERSION "0.0.0")
+set(JoystickStatus_BUILD_DEPENDS "rospy" "rqt_gui" "rqt_gui_py")
+set(JoystickStatus_RUN_DEPENDS "rospy" "rqt_gui" "rqt_gui_py")
+set(JoystickStatus_BUILDTOOL_DEPENDS "catkin")

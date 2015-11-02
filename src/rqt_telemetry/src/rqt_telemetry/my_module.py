@@ -1,0 +1,84 @@
+import os
+import rospy
+import rospkg
+import string
+import threading
+import math
+
+from qt_gui.plugin import Plugin
+from python_qt_binding import loadUi
+from python_qt_binding.QtGui import QWidget
+from std_msgs.msg import Float64
+from mavros_msgs.msg import State
+from mavros_msgs.msg import VFR_HUD
+from mavros_msgs.msg import BatteryStatus
+from sensor_msgs.msg import Imu
+from diagnostic_msgs.msg import DiagnosticArray
+
+
+class MyPlugin(Plugin):
+   
+   
+
+
+    def __init__(self, context):
+        super(MyPlugin, self).__init__(context)
+      
+        self._widget = QWidget()
+        ui_file = os.path.join(rospkg.RosPack().get_path('rqt_telemetry'), 'resource', 'telemetry.ui')
+        loadUi(ui_file, self._widget)
+        self._widget.setObjectName('MyPluginUi')
+        
+        if context.serial_number() > 1:
+            self._widget.setWindowTitle(self._widget.windowTitle() + (' (%d)' % context.serial_number()))
+        context.add_widget(self._widget)
+
+	def vfrCallback(data):
+            self._widget.altLabel.setText(str(round(data.altitude,2)))
+	    self._widget.yawLabel.setText(str(round(data.heading,2)))
+       
+        def stateCallback(data):
+            self._widget.modeLabel.setText(str(data.mode))
+
+        def imuCallback(data):
+   	    self._widget.pitchLabel.setText(str(round(math.degrees(data.orientation.x),2)))
+            self._widget.rollLabel.setText(str(round(math.degrees(data.orientation.y),2)))
+        
+        def powerCallback(data):
+            self._widget.currentLabel.setText(str(round(data.current,2)))
+            self._widget.voltageLabel.setText(str(round(data.voltage,2)))
+        
+        def dCallback(data):
+            for s in data.status:
+                if s.level == 2:
+                   self._widget.statusLabel.setText(s.name+":"+s.message)
+
+
+
+        def listener():
+            rospy.Subscriber("/mavros/vfr_hud", VFR_HUD, vfrCallback)
+            rospy.Subscriber("/mavros/state", State, stateCallback)              
+            rospy.Subscriber("/mavros/imu/data", Imu, imuCallback)            	         
+            rospy.Subscriber("/mavros/battery", BatteryStatus, powerCallback)
+            rospy.Subscriber("/diagnostics",DiagnosticArray, dCallback)
+            rospy.spin()
+
+        update = threading.Thread(target = listener) 
+        update.start()
+
+
+    def shutdown_plugin(self):
+        # TODO unregister all publishers here
+        pass
+
+    def save_settings(self, plugin_settings, instance_settings):
+        # TODO save intrinsic configuration, usually using:
+        # instance_settings.set_value(k, v)
+        pass
+
+    def restore_settings(self, plugin_settings, instance_settings):
+        # TODO restore intrinsic configuration, usually using:
+        # v = instance_settings.value(k)
+        pass
+
+

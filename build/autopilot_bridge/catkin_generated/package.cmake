@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "autopilot_bridge")
+set(autopilot_bridge_MAINTAINER "Mike Clement <mrclemen@nps.edu>")
+set(autopilot_bridge_DEPRECATED "")
+set(autopilot_bridge_VERSION "0.0.1")
+set(autopilot_bridge_BUILD_DEPENDS "rospy" "rosmsg" "message_generation" "std_msgs" "sensor_msgs" "geometry_msgs")
+set(autopilot_bridge_RUN_DEPENDS "rospy" "rosmsg" "message_runtime")
+set(autopilot_bridge_BUILDTOOL_DEPENDS "catkin")

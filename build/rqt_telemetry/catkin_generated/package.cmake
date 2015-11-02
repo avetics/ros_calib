@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "rqt_telemetry")
+set(rqt_telemetry_MAINTAINER "jinahadam <jinahadam@todo.todo>")
+set(rqt_telemetry_DEPRECATED "")
+set(rqt_telemetry_VERSION "0.0.0")
+set(rqt_telemetry_BUILD_DEPENDS "rospy" "rqt_gui" "rqt_gui_py")
+set(rqt_telemetry_RUN_DEPENDS "rospy" "rqt_gui" "rqt_gui_py")
+set(rqt_telemetry_BUILDTOOL_DEPENDS "catkin")

@@ -1,0 +1,39 @@
+FILE(REMOVE_RECURSE
+  "CMakeFiles/autopilot_bridge_generate_messages_py"
+  "/home/jinahadam/catkin_ws/devel/lib/python2.7/dist-packages/autopilot_bridge/msg/_Rallypoint.py"
+  "/home/jinahadam/catkin_ws/devel/lib/python2.7/dist-packages/autopilot_bridge/msg/_Status.py"
+  "/home/jinahadam/catkin_ws/devel/lib/python2.7/dist-packages/autopilot_bridge/msg/_GeoPoint.py"
+  "/home/jinahadam/catkin_ws/devel/lib/python2.7/dist-packages/autopilot_bridge/msg/_ParamPair.py"
+  "/home/jinahadam/catkin_ws/devel/lib/python2.7/dist-packages/autopilot_bridge/msg/_Fencepoint.py"
+  "/home/jinahadam/catkin_ws/devel/lib/python2.7/dist-packages/autopilot_bridge/msg/_LLA.py"
+  "/home/jinahadam/catkin_ws/devel/lib/python2.7/dist-packages/autopilot_bridge/msg/_Waypoint.py"
+  "/home/jinahadam/catkin_ws/devel/lib/python2.7/dist-packages/autopilot_bridge/msg/_WeatherData.py"
+  "/home/jinahadam/catkin_ws/devel/lib/python2.7/dist-packages/autopilot_bridge/msg/_GeoPoseWithCovariance.py"
+  "/home/jinahadam/catkin_ws/devel/lib/python2.7/dist-packages/autopilot_bridge/msg/_Heartbeat.py"
+  "/home/jinahadam/catkin_ws/devel/lib/python2.7/dist-packages/autopilot_bridge/msg/_AutoPilotMsg.py"
+  "/home/jinahadam/catkin_ws/devel/lib/python2.7/dist-packages/autopilot_bridge/msg/_GeoPose.py"
+  "/home/jinahadam/catkin_ws/devel/lib/python2.7/dist-packages/autopilot_bridge/msg/_Geodometry.py"
+  "/home/jinahadam/catkin_ws/devel/lib/python2.7/dist-packages/autopilot_bridge/srv/_ParamGetList.py"
+  "/home/jinahadam/catkin_ws/devel/lib/python2.7/dist-packages/autopilot_bridge/srv/_ParamSetList.py"
+  "/home/jinahadam/catkin_ws/devel/lib/python2.7/dist-packages/autopilot_bridge/srv/_FenceSetAll.py"
+  "/home/jinahadam/catkin_ws/devel/lib/python2.7/dist-packages/autopilot_bridge/srv/_WPGetRange.py"
+  "/home/jinahadam/catkin_ws/devel/lib/python2.7/dist-packages/autopilot_bridge/srv/_FileLoad.py"
+  "/home/jinahadam/catkin_ws/devel/lib/python2.7/dist-packages/autopilot_bridge/srv/_ParamSet.py"
+  "/home/jinahadam/catkin_ws/devel/lib/python2.7/dist-packages/autopilot_bridge/srv/_TimedAction.py"
+  "/home/jinahadam/catkin_ws/devel/lib/python2.7/dist-packages/autopilot_bridge/srv/_FenceGetAll.py"
+  "/home/jinahadam/catkin_ws/devel/lib/python2.7/dist-packages/autopilot_bridge/srv/_WPGetAll.py"
+  "/home/jinahadam/catkin_ws/devel/lib/python2.7/dist-packages/autopilot_bridge/srv/_Version.py"
+  "/home/jinahadam/catkin_ws/devel/lib/python2.7/dist-packages/autopilot_bridge/srv/_RallySetAll.py"
+  "/home/jinahadam/catkin_ws/devel/lib/python2.7/dist-packages/autopilot_bridge/srv/_ReqPrevNMsgs.py"
+  "/home/jinahadam/catkin_ws/devel/lib/python2.7/dist-packages/autopilot_bridge/srv/_SlaveSetup.py"
+  "/home/jinahadam/catkin_ws/devel/lib/python2.7/dist-packages/autopilot_bridge/srv/_RallyGetAll.py"
+  "/home/jinahadam/catkin_ws/devel/lib/python2.7/dist-packages/autopilot_bridge/srv/_ParamGet.py"
+  "/home/jinahadam/catkin_ws/devel/lib/python2.7/dist-packages/autopilot_bridge/srv/_WPSetAll.py"
+  "/home/jinahadam/catkin_ws/devel/lib/python2.7/dist-packages/autopilot_bridge/msg/__init__.py"
+  "/home/jinahadam/catkin_ws/devel/lib/python2.7/dist-packages/autopilot_bridge/srv/__init__.py"
+)
+
+# Per-language clean rules from dependency scanning.
+FOREACH(lang)
+  INCLUDE(CMakeFiles/autopilot_bridge_generate_messages_py.dir/cmake_clean_${lang}.cmake OPTIONAL)
+ENDFOREACH(lang)

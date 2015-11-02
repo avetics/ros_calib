@@ -1,0 +1,8 @@
+prefix=/home/jinahadam/catkin_ws/install
+
+Name: rqt_telemetry
+Description: Description of rqt_telemetry
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/jinahadam/catkin_ws/install/lib 
+Requires: 

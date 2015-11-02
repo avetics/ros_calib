@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "joystickstatus")
+set(joystickstatus_MAINTAINER "jinahadam <jinahadam@todo.todo>")
+set(joystickstatus_DEPRECATED "")
+set(joystickstatus_VERSION "0.0.0")
+set(joystickstatus_BUILD_DEPENDS "rospy" "rqt_gui" "rqt_gui_py")
+set(joystickstatus_RUN_DEPENDS "rospy" "rqt_gui" "rqt_gui_py")
+set(joystickstatus_BUILDTOOL_DEPENDS "catkin")

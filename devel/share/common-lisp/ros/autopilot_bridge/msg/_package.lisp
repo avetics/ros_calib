@@ -1,0 +1,31 @@
+(cl:defpackage autopilot_bridge-msg
+  (:use )
+  (:export
+   "<WEATHERDATA>"
+   "WEATHERDATA"
+   "<RALLYPOINT>"
+   "RALLYPOINT"
+   "<FENCEPOINT>"
+   "FENCEPOINT"
+   "<LLA>"
+   "LLA"
+   "<STATUS>"
+   "STATUS"
+   "<GEODOMETRY>"
+   "GEODOMETRY"
+   "<WAYPOINT>"
+   "WAYPOINT"
+   "<PARAMPAIR>"
+   "PARAMPAIR"
+   "<GEOPOSEWITHCOVARIANCE>"
+   "GEOPOSEWITHCOVARIANCE"
+   "<HEARTBEAT>"
+   "HEARTBEAT"
+   "<GEOPOSE>"
+   "GEOPOSE"
+   "<GEOPOINT>"
+   "GEOPOINT"
+   "<AUTOPILOTMSG>"
+   "AUTOPILOTMSG"
+  ))
+
