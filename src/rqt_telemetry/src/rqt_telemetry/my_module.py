@@ -5,6 +5,7 @@ import string
 import threading
 import math
 
+from struct import *
 from qt_gui.plugin import Plugin
 from python_qt_binding import loadUi
 from python_qt_binding.QtGui import QWidget
@@ -12,6 +13,7 @@ from std_msgs.msg import Float64
 from mavros_msgs.msg import State
 from mavros_msgs.msg import VFR_HUD
 from mavros_msgs.msg import BatteryStatus
+from mavros_msgs.msg import Mavlink
 from sensor_msgs.msg import Imu
 from diagnostic_msgs.msg import DiagnosticArray
 
@@ -23,7 +25,7 @@ class MyPlugin(Plugin):
 
     def __init__(self, context):
         super(MyPlugin, self).__init__(context)
-      
+
         self._widget = QWidget()
         ui_file = os.path.join(rospkg.RosPack().get_path('rqt_telemetry'), 'resource', 'telemetry.ui')
         loadUi(ui_file, self._widget)
@@ -34,7 +36,6 @@ class MyPlugin(Plugin):
         context.add_widget(self._widget)
 
 	def vfrCallback(data):
-            self._widget.altLabel.setText(str(round(data.altitude,2)))
 	    self._widget.yawLabel.setText(str(round(data.heading,2)))
        
         def stateCallback(data):
@@ -53,7 +54,13 @@ class MyPlugin(Plugin):
                 if s.level == 2:
                    self._widget.statusLabel.setText(s.name+":"+s.message)
 
-
+        def mavCallback(data):
+            #mavlink message for sonar. 
+            #parse 
+            if int(data.msgid) == 173:
+                p = pack("i", data.payload64[0])
+                distance = unpack("f",p)
+                self._widget.altLabel.setText(str(round(distance[0],2)))
 
         def listener():
             rospy.Subscriber("/mavros/vfr_hud", VFR_HUD, vfrCallback)
@@ -61,10 +68,12 @@ class MyPlugin(Plugin):
             rospy.Subscriber("/mavros/imu/data", Imu, imuCallback)            	         
             rospy.Subscriber("/mavros/battery", BatteryStatus, powerCallback)
             rospy.Subscriber("/diagnostics",DiagnosticArray, dCallback)
+            rospy.Subscriber("/mavlink/from", Mavlink, mavCallback)
             rospy.spin()
 
         update = threading.Thread(target = listener) 
         update.start()
+
 
 
     def shutdown_plugin(self):

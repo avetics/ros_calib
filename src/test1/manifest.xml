@@ -1,0 +1,15 @@
+<package>
+  <description brief="test1">
+
+     test1
+
+  </description>
+  <author>Jinah Adam</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/test1</url>
+  <depend package="roscpp"/>
+
+</package>
+
+

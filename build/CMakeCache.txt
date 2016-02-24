@@ -212,12 +212,6 @@ GTEST_MAIN_LIBRARY:FILEPATH=GTEST_MAIN_LIBRARY-NOTFOUND
 //Path to a library.
 GTEST_MAIN_LIBRARY_DEBUG:FILEPATH=GTEST_MAIN_LIBRARY_DEBUG-NOTFOUND
 
-//Value Computed by CMake
-JoystickStatus_BINARY_DIR:STATIC=/home/jinahadam/catkin_ws/build/joystickstatus
-
-//Value Computed by CMake
-JoystickStatus_SOURCE_DIR:STATIC=/home/jinahadam/catkin_ws/src/joystickstatus
-
 //lsb_release executable was found
 LSB_FOUND:BOOL=TRUE
 
@@ -263,11 +257,29 @@ autopilot_bridge_BINARY_DIR:STATIC=/home/jinahadam/catkin_ws/build/autopilot_bri
 //Value Computed by CMake
 autopilot_bridge_SOURCE_DIR:STATIC=/home/jinahadam/catkin_ws/src/autopilot_bridge
 
+//Value Computed by CMake
+calib_BINARY_DIR:STATIC=/home/jinahadam/catkin_ws/build/calib
+
+//Value Computed by CMake
+calib_SOURCE_DIR:STATIC=/home/jinahadam/catkin_ws/src/calib
+
 //The directory containing a CMake configuration file for catkin.
 catkin_DIR:PATH=/opt/ros/indigo/share/catkin/cmake
 
 //The directory containing a CMake configuration file for cpp_common.
 cpp_common_DIR:PATH=/opt/ros/indigo/share/cpp_common/cmake
+
+//Value Computed by CMake
+down_lidar_BINARY_DIR:STATIC=/home/jinahadam/catkin_ws/build/down_lidar
+
+//Value Computed by CMake
+down_lidar_SOURCE_DIR:STATIC=/home/jinahadam/catkin_ws/src/down_lidar
+
+//Value Computed by CMake
+failsafe_BINARY_DIR:STATIC=/home/jinahadam/catkin_ws/build/failsafe
+
+//Value Computed by CMake
+failsafe_SOURCE_DIR:STATIC=/home/jinahadam/catkin_ws/src/failsafe
 
 //The directory containing a CMake configuration file for gencpp.
 gencpp_DIR:PATH=/opt/ros/indigo/share/gencpp/cmake
@@ -310,6 +322,12 @@ gtest_force_shared_crt:BOOL=OFF
 gtest_main_LIB_DEPENDS:STATIC=general;-lpthread;general;gtest;
 
 //Value Computed by CMake
+joy_logger_BINARY_DIR:STATIC=/home/jinahadam/catkin_ws/build/joy_logger
+
+//Value Computed by CMake
+joy_logger_SOURCE_DIR:STATIC=/home/jinahadam/catkin_ws/src/joy_logger
+
+//Value Computed by CMake
 joystickstatus_BINARY_DIR:STATIC=/home/jinahadam/catkin_ws/build/joystickstatus
 
 //Value Computed by CMake
@@ -318,17 +336,38 @@ joystickstatus_SOURCE_DIR:STATIC=/home/jinahadam/catkin_ws/src/joystickstatus
 //Path to a library.
 lib:FILEPATH=/opt/ros/indigo/lib/librostime.so
 
+//Value Computed by CMake
+localisation_logger_BINARY_DIR:STATIC=/home/jinahadam/catkin_ws/build/localisation_logger
+
+//Value Computed by CMake
+localisation_logger_SOURCE_DIR:STATIC=/home/jinahadam/catkin_ws/src/localisation_logger
+
+//Value Computed by CMake
+mavrosjoy_BINARY_DIR:STATIC=/home/jinahadam/catkin_ws/build/mavrosjoy
+
+//Value Computed by CMake
+mavrosjoy_SOURCE_DIR:STATIC=/home/jinahadam/catkin_ws/src/mavrosjoy
+
 //The directory containing a CMake configuration file for message_generation.
 message_generation_DIR:PATH=/opt/ros/indigo/share/message_generation/cmake
 
 //The directory containing a CMake configuration file for message_runtime.
 message_runtime_DIR:PATH=/opt/ros/indigo/share/message_runtime/cmake
 
+//The directory containing a CMake configuration file for rosconsole.
+rosconsole_DIR:PATH=/opt/ros/indigo/share/rosconsole/cmake
+
+//The directory containing a CMake configuration file for roscpp.
+roscpp_DIR:PATH=/opt/ros/indigo/share/roscpp/cmake
+
 //The directory containing a CMake configuration file for roscpp_serialization.
 roscpp_serialization_DIR:PATH=/opt/ros/indigo/share/roscpp_serialization/cmake
 
 //The directory containing a CMake configuration file for roscpp_traits.
 roscpp_traits_DIR:PATH=/opt/ros/indigo/share/roscpp_traits/cmake
+
+//The directory containing a CMake configuration file for rosgraph_msgs.
+rosgraph_msgs_DIR:PATH=/opt/ros/indigo/share/rosgraph_msgs/cmake
 
 //The directory containing a CMake configuration file for rospy.
 rospy_DIR:PATH=/opt/ros/indigo/share/rospy/cmake
@@ -359,6 +398,15 @@ sensor_msgs_DIR:PATH=/opt/ros/indigo/share/sensor_msgs/cmake
 
 //The directory containing a CMake configuration file for std_msgs.
 std_msgs_DIR:PATH=/opt/ros/indigo/share/std_msgs/cmake
+
+//Value Computed by CMake
+testing_BINARY_DIR:STATIC=/home/jinahadam/catkin_ws/build/testing
+
+//Value Computed by CMake
+testing_SOURCE_DIR:STATIC=/home/jinahadam/catkin_ws/src/testing
+
+//The directory containing a CMake configuration file for xmlrpcpp.
+xmlrpcpp_DIR:PATH=/opt/ros/indigo/share/xmlrpcpp/cmake
 
 
 ########################
@@ -462,7 +510,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_LOCAL_GENERATORS:INTERNAL=6
+CMAKE_NUMBER_OF_LOCAL_GENERATORS:INTERNAL=13
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

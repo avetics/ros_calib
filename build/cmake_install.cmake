@@ -117,9 +117,16 @@ ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unsp
 IF(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   INCLUDE("/home/jinahadam/catkin_ws/build/gtest/cmake_install.cmake")
+  INCLUDE("/home/jinahadam/catkin_ws/build/calib/cmake_install.cmake")
+  INCLUDE("/home/jinahadam/catkin_ws/build/down_lidar/cmake_install.cmake")
+  INCLUDE("/home/jinahadam/catkin_ws/build/failsafe/cmake_install.cmake")
+  INCLUDE("/home/jinahadam/catkin_ws/build/joy_logger/cmake_install.cmake")
+  INCLUDE("/home/jinahadam/catkin_ws/build/localisation_logger/cmake_install.cmake")
+  INCLUDE("/home/jinahadam/catkin_ws/build/mavrosjoy/cmake_install.cmake")
   INCLUDE("/home/jinahadam/catkin_ws/build/joystickstatus/cmake_install.cmake")
   INCLUDE("/home/jinahadam/catkin_ws/build/rqt_mypkg/cmake_install.cmake")
   INCLUDE("/home/jinahadam/catkin_ws/build/rqt_telemetry/cmake_install.cmake")
+  INCLUDE("/home/jinahadam/catkin_ws/build/testing/cmake_install.cmake")
   INCLUDE("/home/jinahadam/catkin_ws/build/autopilot_bridge/cmake_install.cmake")
 
 ENDIF(NOT CMAKE_INSTALL_LOCAL_ONLY)

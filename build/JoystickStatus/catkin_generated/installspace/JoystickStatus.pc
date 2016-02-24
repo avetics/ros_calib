@@ -1,8 +1,0 @@
-prefix=/home/jinahadam/catkin_ws/install
-
-Name: JoystickStatus
-Description: Description of JoystickStatus
-Version: 0.0.0
-Cflags: 
-Libs: -L/home/jinahadam/catkin_ws/install/lib 
-Requires: 

@@ -737,48 +737,6 @@ sensor_msgs_generate_messages_py/fast:
 	cd /home/jinahadam/catkin_ws/build && $(MAKE) -f autopilot_bridge/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make autopilot_bridge/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
 .PHONY : sensor_msgs_generate_messages_py/fast
 
-# Convenience name for target.
-autopilot_bridge/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule:
-	cd /home/jinahadam/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 autopilot_bridge/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
-.PHONY : autopilot_bridge/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_cpp: autopilot_bridge/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
-.PHONY : std_msgs_generate_messages_cpp
-
-# fast build rule for target.
-std_msgs_generate_messages_cpp/fast:
-	cd /home/jinahadam/catkin_ws/build && $(MAKE) -f autopilot_bridge/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make autopilot_bridge/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
-.PHONY : std_msgs_generate_messages_cpp/fast
-
-# Convenience name for target.
-autopilot_bridge/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule:
-	cd /home/jinahadam/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 autopilot_bridge/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
-.PHONY : autopilot_bridge/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_lisp: autopilot_bridge/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
-.PHONY : std_msgs_generate_messages_lisp
-
-# fast build rule for target.
-std_msgs_generate_messages_lisp/fast:
-	cd /home/jinahadam/catkin_ws/build && $(MAKE) -f autopilot_bridge/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make autopilot_bridge/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
-.PHONY : std_msgs_generate_messages_lisp/fast
-
-# Convenience name for target.
-autopilot_bridge/CMakeFiles/std_msgs_generate_messages_py.dir/rule:
-	cd /home/jinahadam/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 autopilot_bridge/CMakeFiles/std_msgs_generate_messages_py.dir/rule
-.PHONY : autopilot_bridge/CMakeFiles/std_msgs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_py: autopilot_bridge/CMakeFiles/std_msgs_generate_messages_py.dir/rule
-.PHONY : std_msgs_generate_messages_py
-
-# fast build rule for target.
-std_msgs_generate_messages_py/fast:
-	cd /home/jinahadam/catkin_ws/build && $(MAKE) -f autopilot_bridge/CMakeFiles/std_msgs_generate_messages_py.dir/build.make autopilot_bridge/CMakeFiles/std_msgs_generate_messages_py.dir/build
-.PHONY : std_msgs_generate_messages_py/fast
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -833,9 +791,6 @@ help:
 	@echo "... sensor_msgs_generate_messages_cpp"
 	@echo "... sensor_msgs_generate_messages_lisp"
 	@echo "... sensor_msgs_generate_messages_py"
-	@echo "... std_msgs_generate_messages_cpp"
-	@echo "... std_msgs_generate_messages_lisp"
-	@echo "... std_msgs_generate_messages_py"
 	@echo "... test"
 .PHONY : help
 
